@@ -22,6 +22,9 @@
       font-weight: 600;
     }
     a.button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       padding: 12px 24px;
       background: #0078ff;
       color: white;
@@ -33,9 +36,13 @@
     a.button:hover {
       background: #005fcc;
     }
-    img {
+    img.qr {
       width: 200px;
       height: 200px;
+    }
+    img.logo {
+      height: 24px;
+      width: auto;
     }
   </style>
 </head>
@@ -44,12 +51,15 @@
   <h1>scarled</h1>
 
   <a class="button" href="https://play.google.com/store/apps/details?id=appinventor.ai_milan_gaabor.ScarLED_beta">
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play Logo">
     Download app
   </a>
 
-  <img 
-    src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://play.google.com/store/apps/details?id=appinventor.ai_milan_gaabor.ScarLED_beta" 
-    alt="QR Code">
+  <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://play.google.com/store/apps/details?id=appinventor.ai_milan_gaabor.ScarLED_beta" alt="QR Code">
+
+</body>
+</html>
+
 
 </body>
 </html>
